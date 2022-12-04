@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<main class="grid-container">
+			<header class="header">
+			</header>
+			
+			<span class="glow">
+				<article class="container-row">
+					
+					<section class="layer1">
+					</section>
+					<section class="layer2">
+					</section>
+					<section class="layer3">
+					</section>
+					
+				</article>
+			</span>
+			
+			<span class="glow">
+			<article class="container-row">
+				
+				<section class="layer1">
+				</section>
+				<section class="layer2">
+				</section>
+				<section class="layer3">
+				</section>
+				
+			</article>
+			</span>
+			
+			<span class="glow">
+			<article class="container-row">
+				
+				<section class="layer1">
+				</section>
+				<section class="layer2">
+				</section>
+				<section class="layer3">
+				</section>
+				
+			</article>
+			</span>
+			
+			<svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+			  <defs>
+					<filter id="goo">
+						<feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />    
+						<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+						<feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+					</filter>
+				</defs>
+			</svg>
+			<!--
+			
+		</main>
+	</body>
+</html>

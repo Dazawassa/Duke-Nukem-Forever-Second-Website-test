@@ -1,0 +1,491 @@
+/* great reset */
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+}
+
+/* font faces */
+@font-face {
+	font-family: Neuropol;
+	src: url("./assets/fonts/neuropol.otf");
+}
+
+@font-face {
+	font-family: EuroseRegular;
+	src: url("./assets/fonts/EuroseRegular.ttf");
+}
+
+@font-face {
+	font-family: EuroseBold;
+	src: url("./assets/fonts/EuroseBold.ttf");
+}
+
+@font-face {
+	font-family: EuroseBoldItalic;
+	src: url("./assets/fonts/EuroseBoldItalic.ttf");
+}
+
+@font-face {
+	font-family: EuroseItalic;
+	src: url("./assets/fonts/EuroseItalic.ttf");
+}
+
+@font-face {
+	font-family: EuroseWideHeavyRegular;
+	src: url("./assets/fonts/EuroseWideHeavyRegular.ttf");
+}
+
+body {
+	margin: 0px;
+	text-align: center;
+
+	background-color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: white;
+	text-shadow: 0 0 2px #ff000000, 0 0 4px white
+}
+
+/* BACKGROUND */
+
+#id_background_container {
+	height: 100%;
+	width: 100vw;
+	position: relative;
+}
+
+#id_background {
+	width: 100%;
+	height: 100%;
+}
+
+p {
+	color: white;
+}
+
+
+/* page setup */
+/* html {
+	overflow-x: hidden;
+	margin-right: calc(-1 * (100vw - 100%));
+	text-align: center;
+	font-size: 1.125vw;
+	font-family: EuroseRegular;
+	color: white;
+	background-color: black !important;
+} */
+
+.header {
+	width: 40%;
+	margin: 2em auto 2em auto;
+}
+
+.header img {
+	width: 100%;
+	object-fit: contain;
+}
+
+.content {
+	text-align: left;
+}
+
+.columns {
+	margin: 0 auto 0 auto;
+	text-align: left;
+}
+
+.content img {
+	width: 100%;
+	object-fit: contain;
+}
+
+.footer {
+	margin-top: 2em;
+}
+
+.border-thin {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 2px solid white;
+}
+
+b {
+	font-family: EuroseBold;
+}
+
+/* header font sizes */
+h1 {
+	font-family: EuroseBold;
+	font-size: 5vw;
+}
+
+h2 {
+	font-family: EuroseBold;
+	font-size: 4vw;
+}
+
+h3 {
+	font-family: EuroseBold;
+	font-size: 3vw;
+}
+
+h4 {
+	font-family: EuroseBold;
+	font-size: 2vw;
+}
+
+h5 {
+	font-family: EuroseBold;
+	font-size: 1.5vw;
+}
+
+h6 {
+	font-family: EuroseBold;
+	font-size: 1.25vw;
+}
+
+/* pre-text icon */
+h1.preicon:before {
+	height: 5vw;
+	width: 5vw;
+}
+
+h2.preicon:before {
+	height: 4vw;
+	width: 4vw;
+}
+
+h3.preicon:before {
+	height: 3vw;
+	width: 3vw;
+}
+
+h4.preicon:before {
+	height: 2vw;
+	width: 2vw;
+}
+
+h5.preicon:before {
+	height: 1.5vw;
+	width: 1.5vw;
+}
+
+p.preicon:before {
+	height: 1.125vw;
+	width: 1.125vw;
+}
+
+.preicon:before {
+	content: '';
+	display: inline-block;
+	background-image: var(--preicon);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-right: 0.5ch;
+	vertical-align: text-top;
+	image-rendering: crisp-edges;
+}
+
+/* post-text icon */
+h1.posticon:after {
+	height: 5vw;
+	width: 5vw;
+}
+
+h2.posticon:after {
+	height: 4vw;
+	width: 4vw;
+}
+
+h3.posticon:after {
+	height: 3vw;
+	width: 3vw;
+}
+
+h4.posticon:after {
+	height: 2vw;
+	width: 2vw;
+}
+
+h5.posticon:after {
+	height: 1.5vw;
+	width: 1.5vw;
+}
+
+p.posticon:after {
+	height: 1.125vw;
+	width: 1.125vw;
+}
+
+.posticon:after {
+	content: '';
+	display: inline-block;
+	background-image: var(--posticon);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-left: 0.5ch;
+	vertical-align: text-top;
+	image-rendering: crisp-edges;
+}
+
+/* Class Content */
+
+.class_header {
+	background-color: #3A3A82;
+	padding: 10px;
+}
+
+.class_main {
+	margin: auto;
+	background-color: #3A3A82;
+	border: thin solid #8C8CBC;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-box-shadow: 0px 0px 10px 6px #8C8CBC;
+	-moz-box-shadow: 0px 0px 10px 6px #8C8CBC;
+	box-shadow: 0px 0px 10px 6px #8C8CBC;
+	border-radius: 10px;
+}
+
+.class_gray {
+	position: sticky;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.class_text_header {
+	color: white;
+	text-shadow: 0 0 4px #ff000000, 0 0 6px white;
+}
+
+/*remove this and the slideshow breaks. I have no clue how this even fixed it but it did.*/
+#id_hide {
+	display: none;
+}
+
+/* JDC stylesheet */
+
+/* minimal css reset */
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*================*/
+
+main {
+	margin: 0 auto;
+	max-width: 950px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 15px;
+	background-color: black;
+	padding: 1rem;
+}
+
+.header {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	height: 50px;
+	background-color: #adaee7;
+}
+
+.container-row {
+	display: grid;
+	filter: url('#goo');
+}
+
+/* .layer1 {
+	clip-path: polygon(100% 50%, 90% 64%, 0% 64%, 0% 24%, 11% 11%, 18% 11%, 90% 11%, 100% 21%);
+	z-index: 4;
+} */
+
+.layer2Heading {
+	top: 2.5rem;
+	position: relative;
+	text-align: left;
+}
+
+.layer2Heading {
+	left: 0.5rem;
+}
+
+.layer1 {
+	clip-path: polygon(100% 50%, 89.5% 64%, 0% 64%, 0% 19%, 10% 6%, 23% 6%, 26% 0%, 88.5% 0%, 100% 12%);
+	background-color: #adaee7;
+	z-index: 2;
+	bottom: 0;
+}
+
+.layer_bottom {
+	clip-path: polygon(100% 50%, 89.5% 64%, 0% 64%, 0% 19%, 10% 6%, 18% 6%, 88.5% 6%, 100% 18%);
+	background-color: #adaee7;
+	z-index: 2;
+	bottom: 0;
+}
+
+.layer2 {
+	clip-path: polygon(97.5% 47%, 89.5% 58%, 0% 58%, 0% 19%, 10% 6%, 18% 6%, 88.5% 6%, 97.5% 15.3%);
+	background-color: #4A4AA5;
+	z-index: 2;
+	box-shadow: inset -2px -2px 2px #000000;
+	bottom: 0;
+}
+
+.glow {
+	filter: drop-shadow(0px -1px 4px rgba(255, 255, 255, .7)) drop-shadow(0px 1px 0 rgba(255, 255, 255, .6)) drop-shadow(1px 0px 0 rgba(255, 255, 255, .6))
+}
+
+.layer3 {
+	background-color: #181a3b;
+	z-index: 3;
+	border: 1px solid rgba(255, 255, 255, .5);
+	border-radius: 4px;
+	/* right: 2rem; */
+	clip-path: polygon(100% 50%, 89.5% 64%, 0% 64%, 0% 19%, 10% 6%, 18% 6%, 89% 6%, 100% 19%);
+	/* top: 5rem; */
+}
+
+.custom-layer-top {
+	/* clip-path: polygon(20% 0, 80% 0%, 100% 20%, 25% 20%, 10% 35%, 0 20%); */
+	/* clip-path: polygon(20% 0%, 80% 0%, 100% 15%, 28% 15%, 10% 27%, 0 15%); */
+	clip-path: polygon(7% 0, 93% 0, 100% 7%, 7% 7%, 0 14%, 0 7%);
+	background-color: #adaee7;
+}
+
+.custom-layer-bottom {
+	/* clip-path: polygon(20% 0, 80% 0%, 100% 20%, 25% 20%, 10% 35%, 0 20%); */
+	clip-path: polygon(7% 50%, 93% 50%, 100% 43%, 100% 7%, 7% 7%, 0 14%, 0 43%);
+	/* background-color: #3a3a82; */
+	background-color: #4A4AA5;
+}
+
+.main-menu-btn {
+	clip-path: polygon(5% 0%, 95% 0%, 95% 100%, 5% 100%);
+	background-color: #181a3b;
+	z-index: 3;
+	height: 130px;
+	width: 395px;
+}
+
+.main-menu-bottom-btn {
+	clip-path: polygon(5% 0%, 95% 0%, 95% 62%, 67% 100%, 5% 100%);
+	background-color: #181a3b;
+	z-index: 3;
+	height: 130px;
+	width: 395px;
+}
+
+.main-menu-top {
+	clip-path: polygon(0% 80%, 18% 80%, 30% 30%, 34% 30%, 37% 18%, 90% 18%, 100% 52%, 100% 0%, 0% 0%, 0% 21%, 0% 100%);
+	background-color: #4A4AA5;
+	z-index: 2;
+}
+
+.main-menu-middle {
+	clip-path: polygon(0% 83%, 12% 83%, 18% 72%, 18% 10%, 12% 0%, 0% 0%);
+	/* clip-path: polygon(0% 88%, 12% 88%, 18% 80%, 18% 28%, 26% 15%, 36% 15%, 40% 7%, 90% 7%, 100% 20%, 100% 0%, 0% 0%, 0% 21%, 0% 100%); */
+	background-color: #4A4AA5;
+	z-index: 2;
+}
+
+
+.main-menu-top-flourishes {
+	clip-path: polygon(0% 88%, 3% 88%, 5% 93%, 13% 93%, 20% 83%, 20% 32%, 30% 15%, 34% 15%, 40% 7%, 42% 12%, 89.5% 12%, 100% 26%, 100% 0%, 0% 0%, 0% 21%, 0% 100%);
+	background-color: #adaee7;
+	z-index: 1;
+}
+
+.main-menu-bottom {
+	clip-path: polygon(0% 100%, 0% 85%, 13% 85%, 20% 75%, 90% 75%, 100% 57%, 100% 100%);
+	background-color: #4A4AA5;
+}
+
+.main-menu-flourishes {
+	clip-path: polygon(0% 100%, 0% 85%, 13% 85%, 20% 75%, 90% 75%, 100% 56%, 100% 100%);
+	background-color: #adaee7;
+	z-index: 1;
+}
+
+
+.circle-picture {
+	clip-path: circle(50% at 50% 50%);
+}
+
+.container {
+	/* background:
+	linear-gradient(blue, black),
+	url(https://grainy-gradients.vercel.app/noise.svg);
+filter: contrast(170%) brightness(1000%); */
+
+}
+
+.quicktimeBubble {
+	height: 64px;
+	width: 308px;
+	background-color: white;
+}
+
+.cornerLogo {
+	/* background-color: #181a3b; */
+}
+
+.logo-backfill {
+	clip-path: polygon(2.5% 4%, 100% 4%, 100% 20%, 92% 43%, 66% 43%, 43% 96%, 2.5% 96%);
+	background-color: #D75431;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+}
+
+.logo-backfill-inside {
+	clip-path: polygon(2.5% 4%, 100% 4%, 100% 20%, 92% 43%, 66% 43%, 43% 96%, 2.5% 96%);
+	background-color: #D75431;
+	z-index: 2;
+	width: 39%;
+	height: 100%;
+}

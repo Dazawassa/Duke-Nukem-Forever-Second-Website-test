@@ -1,0 +1,92 @@
+/* minimal css reset */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*================*/
+
+main {
+	margin: 0 auto;
+	max-width: 950px;
+	display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+  background-color: black;
+  padding: 1rem;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  height: 50px;
+  background-color: #adaee7;
+}
+
+.container-row {
+  display: grid;
+  filter: url('#goo');
+}
+
+.layer1, .layer2, .layer3 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.layer1 {
+  clip-path: polygon(0% 100%, 100% 100%, 100% 14px, calc(100% - 14px) 0%, 0% 0%);
+  background-color: #adaee7;
+  height: 9rem;
+  z-index: 1; 
+  margin-top: .8rem;
+}
+
+.layer2 {
+  clip-path: polygon(100% 14%, 100% 100%, 0 100%, 0 7%, 21% 7%, 24% 0, 77% 0, 83% 14%);
+  background-color: #3a3a82; 
+  height: 10rem;
+  margin-right: .4rem;
+  z-index: 2;
+}
+  
+.glow {
+  filter: drop-shadow(0px -1px 4px rgba(255, 255, 255, .7))
+          drop-shadow(0px 1px 0 rgba(255, 255, 255, .6))
+          drop-shadow(1px 0px 0 rgba(255, 255, 255, .6))
+}
+
+.layer3 {
+  background-color: #181a3b;
+  height: 8rem;
+  width: 95%;
+  margin-top: 1.6rem;
+  margin-left: .2rem;
+  z-index: 3;
+  border: 1px solid rgba(255, 255, 255, .5);
+  border-radius: 4px;
+}
+
+.glow {
+}
+
+
+
+
